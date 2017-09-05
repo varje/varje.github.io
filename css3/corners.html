@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rounded corners and shadows</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            height: 1000px;
+            width: 2000px;
+        }
+        .box{
+            background-image:-moz-linear-gradient(top, #FAD502, #E89502);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FAD502), to(#E89502), color-stop(1,#E89502));
+            height: 100px;
+            width: 200px;
+            margin: 50px;
+        }
+
+        .fourcorners{
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -khtml-border-radius: 20px;
+            border-radius: 20px;
+            border:2px solid #F2F2F2;
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
+            -moz-box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
+            -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
+        }
+
+        .topleft{
+            -moz-border-radius-topleft: 20px;
+            -webkit-border-top-left-radius: 20px;
+            -khtml-border-radius-topleft: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        .bottomleft{
+            -moz-border-radius-bottomleft: 20px;
+            -webkit-border-bottom-left-radius: 20px;
+            -khtml-border-radius-bottomleft: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .topright{
+            -moz-border-radius-topright: 20px;
+            -webkit-border-top-right-radius: 20px;
+            -khtml-border-radius-topright: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .bottomright{
+            -moz-border-radius-bottomright: 20px;
+            -webkit-border-bottom-right-radius: 20px;
+            -khtml-border-radius-bottomright: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .asymmetrical1{
+            -webkit-border-top-left-radius: 160px;
+            -khtml-border-radius-topleft: 160px;
+            -moz-border-radius-topleft: 160px;
+            border-top-left-radius: 160px;
+
+            -webkit-border-top-right-radius: 20px;
+            -khtml-border-radius-topright: 20px;
+            -moz-border-radius-topright: 20px;
+            border-top-right-radius: 20px;
+
+            -webkit-border-bottom-left-radius: 10px;
+            -khtml-border-radius-bottomleft: 10px;
+            -moz-border-radius-bottomleft: 10px;
+            border-bottom-left-radius: 10px;
+
+            -webkit-border-bottom-right-radius: 0px;
+            -khtml-border-radius-bottomright: 0px;
+            -moz-border-radius-bottomright: 0px;
+            border-bottom-right-radius: 0px;
+
+            border:2px solid #FEFEFE;
+
+            box-shadow: inset 5px 5px 5px rgba(0,0,0,0.25);
+            -moz-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.25);
+            -webkit-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.25);
+        }
+
+        .asymmetrical2{
+            -webkit-border-top-left-radius: 0px;
+            -khtml-border-radius-topleft: 0px;
+            -moz-border-radius-topleft: 0px;
+            border-top-left-radius: 0px;
+
+            -webkit-border-top-right-radius: 90px;
+            -khtml-border-radius-topright: 90px;
+            -moz-border-radius-topright: 90px;
+            border-top-right-radius: 90px;
+
+            -webkit-border-bottom-left-radius: 0px;
+            -khtml-border-radius-bottomleft: 0px;
+            -moz-border-radius-bottomleft: 0px; border-bottom-left-radius: 0px;
+
+            -webkit-border-bottom-right-radius: 90px;
+            -khtml-border-radius-bottomright: 90px;
+            -moz-border-radius-bottomright: 90px;
+            border-bottom-right-radius: 90px;
+
+            border:1px solid #F00;
+
+            box-shadow: 10px 10px 0px #F00;
+            -moz-box-shadow: 10px 10px 0px #F00;
+            -webkit-box-shadow: 10px 10px 0px #F00;
+        }
+
+        .circle{
+            width:170px;
+            height:170px;
+
+            padding:15px;
+            font-family:Arial, Helvetica, sans-serif;
+            color:#FFF;
+            font-size:12px;
+            font-weight:bold;
+            float:left;
+
+            background-image:-moz-linear-gradient(top, #FAD502, #E89502);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FAD502), to(#E89502), color-stop(1,#E89502));
+
+
+            -webkit-border-top-left-radius: 100px;
+            -khtml-border-radius-topleft: 100px;
+            -moz-border-radius-topleft: 100px;
+            border-top-left-radius: 100px;
+
+            -webkit-border-top-right-radius: 100px;
+            -khtml-border-radius-topright: 100px;
+            -moz-border-radius-topright: 100px;
+            border-top-right-radius: 100px;
+
+            -webkit-border-bottom-left-radius: 100px;
+            -khtml-border-radius-bottomleft: 100px;
+            -moz-border-radius-bottomleft: 100px;
+            border-bottom-left-radius: 100px;
+
+            -webkit-border-bottom-right-radius: 100px;
+            -khtml-border-radius-bottomright: 100px;
+            -moz-border-radius-bottomright: 100px;
+            border-bottom-right-radius: 100px;
+
+            box-shadow: 10px 10px 0px #F2F2F2;
+            -moz-box-shadow:inset 0px 0px 120px rgba(0,0,0,.25);
+            -webkit-box-shadow: 10px 10px 0px #F2F2F2;
+        }
+    </style>
+</head>
+<body>
+<nav class="horizontal">
+    <ul>
+        <li><a href="index.html">Complex background</a></li>
+        <li><a href="corners.html">Corners and shadows</a></li>
+        <li><a href="test.html">Gradients</a></li>
+        <li><a href="opacity.html">Opacity</a></li>
+    </ul>
+</nav>
+<div class="box fourcorners"></div>
+<div class="box topright bottomleft"></div>
+<div class="box topleft bottomright"></div>
+<div class="box asymmetrical1 right"></div>
+<div class="box asymmetrical2"></div>
+<div class="circle center"></div>
+</body>
+</html>

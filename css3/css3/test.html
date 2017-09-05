@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradients</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body.linear{
+            height:1000px;/* To add a full page body CSS3 gradient you need to set this height to 100% */
+            width:2000px;
+            background-repeat:no-repeat;
+
+            background-image:-moz-linear-gradient(top, #0096f5, #00416a);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0096f5), to(#00416a), color-stop(1,#FFF));
+            filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#0096f5, endColorstr=#00416a);
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#0096f5, endColorstr=#00416a)"; /*To avoid have a blank stripe at the bottom, there are a couple of fixes */
+            /*background-attachment:fixed;*/ /*Works ok except on IE*/
+            background-color:#00416a; /*The background will look nice if there's scroll, adding the bottom color all across the page*/
+        }
+
+        .linear_gradient{
+            background-image:-moz-linear-gradient(top, #6f828b, #122938);
+            background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6f828b), to(#122938), color-stop(1,#FFF));
+        }
+
+        .angle_gradient{
+            background: -moz-linear-gradient(right top 260deg, #ffe930, #ed9700);
+            background: -webkit-gradient(linear, right top, left bottom, from(#ffe930), to(#ffa200));
+        }
+
+        .radial_gradient{
+            background: -moz-radial-gradient(50% 50%, circle farthest-corner, #ff0000, #a00000);
+            background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, from(#ff0000), to(#a00000));
+        }
+
+        .stops_gradient{
+            background: -moz-linear-gradient(top, #676767 0%, #262626 50%, #1D1D1D 50%, #000000 100%);
+            background: -webkit-gradient(linear, left top, left bottom, from(#676767), color-stop(0.5, #262626), color-stop(0.5, #1D1D1D), to(#000000));
+        }
+
+        .linear_gradient, .angle_gradient, .radial_gradient, .stops_gradient {
+            height: 200px;
+            margin: 50px;
+            width: 1000px;
+        }
+    </style>
+</head>
+<body class="linear">
+<nav class="horizontal">
+    <ul>
+        <li><a href="index.html">Complex background</a></li>
+        <li><a href="corners.html">Corners and shadows</a></li>
+        <li><a href="test.html">Gradients</a></li>
+        <li><a href="opacity.html">Opacity</a></li>
+    </ul>
+</nav>
+<div class="linear_gradient"></div>
+<div class="angle_gradient"></div>
+<div class="radial_gradient"></div>
+<div class="stops_gradient"></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opacity</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image:url(autumn.jpg);
+            background-position:top center;
+            background-attachment:fixed;
+            background-repeat:no-repeat;
+            width:1000;
+            height:2000;
+        }
+        .box {
+            height:300;
+            width:500;
+            background-color:yellow;
+            margin-top: 20px;
+        }
+
+        /*Opacity Test*/
+        .opaque{
+            opacity: 1;
+        }
+
+        .translucent60{
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+<nav class="horizontal">
+    <ul>
+        <li><a href="index.html">Complex background</a></li>
+        <li><a href="corners.html">Corners and shadows</a></li>
+        <li><a href="test.html">Gradients</a></li>
+        <li><a href="opacity.html">Opacity</a></li>
+    </ul>
+</nav>
+<section class="box opaque">
+    <img src="leaf.png" width="180" height="180" alt="Thumb">
+    This is a 100% Opaque element, everything inside this tag is fully visible
+</section>
+
+<section class="box translucent60">
+    <img src="leaf.png" width="180" height="180" alt="Thumb">
+    This is a 60% Opaque element, you notice that this text is hard to read because Opacity affects the entire element and all the content inside it. </section>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+.header {
+    position: relative;
+    background-image:url(header.gif);
+    background-repeat: repeat;
+    background-size: auto 100%;
+    margin-bottom: 0;
+}
+
+.header_text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+.container-fluid {
+    background-image: url(bg.jpg);
+    background-repeat: repeat;
+}
+
+html, body, .container-fluid {
+    height: 100%;
+}
+
+.img_circle {
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+}
+
+i {
+    padding-right: 5px;
+    color: white;
+}
+
+footer {
+    background-color: #efefef;
+    text-align: center;
+    width: 100%;
+}

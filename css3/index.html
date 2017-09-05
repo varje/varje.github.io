@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landscape</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .landscape{
+            /*Background Images*/
+            background: url(cloud.png) 100px 250px no-repeat, /*First Cloud*/ /*images go first*/
+            url(cloud.png) 510px 170px no-repeat, /*Small Cloud*/
+            url(cloud.png) 740px 310px no-repeat, /*Smallest Cloud*/
+            url(mountain.png) 430px 340px no-repeat, /* Mountains */
+            -moz-linear-gradient(top, #71B1D5 0%, #FFFFFF 70%, #1a35b7 70%, #250081 100%); /*Gradient*/   /*Gradients go last*/
+
+            background: url(cloud.png) 100px 250px no-repeat, /*First Cloud*/ /*images go first*/
+            url(cloud.png) 510px 170px no-repeat, /*Small Cloud*/
+            url(cloud.png) 740px 310px no-repeat, /*Smallest Cloud*/
+            url(mountain.png) 430px 340px no-repeat, /* Mountains */
+            -webkit-gradient(linear, left top, left bottom, from(#71B1D5), color-stop(0.7, #FFFFFF), color-stop(0.7, #0028b7), to(#440081));/*Gradient*/
+
+            /*Background sizes*/
+            background-size:  230px 150px, /*First Cloud*/
+            300px 170px, /*Small Cloud*/
+            350px 200px, /*Smallest Cloud*/
+            auto, /*Mountains*/
+            auto; /*Gradient*/
+
+            -moz-background-size: 230px 150px, /*First Cloud*/
+            300px 170px, /*Small Cloud*/
+            350px 200px, /*Smallest Cloud*/
+            auto, /*Mountains*/
+            auto; /*Gradient*/
+
+            -webkit-background-size: 230px 150px, /*First Cloud*/
+            300px 170px, /*Small Cloud*/
+            350px 200px, /*Smallest Cloud*/
+            auto, /*Mountains*/
+            auto; /*Gradient*/
+        }
+
+        .landscape {
+            height: 1000px;
+            width: 2000px;
+        }
+
+    </style>
+</head>
+<body class="linear">
+<nav class="horizontal">
+    <ul>
+        <li><a href="index.html">Complex background</a></li>
+        <li><a href="corners.html">Corners and shadows</a></li>
+        <li><a href="test.html">Gradients</a></li>
+        <li><a href="opacity.html">Opacity</a></li>
+        <li><a href="filters.html">Filters</a></li>
+    </ul>
+</nav>
+
+<section class="landscape">
+
+</section>
+
+</body>
+</html>
