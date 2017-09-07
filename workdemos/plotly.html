@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Bootstrap, Jquery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container-fluid">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Plotly graphs</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="pie_chart"></div>
+                        <div id="bar_plot"></div>
+                        <div id="line_plot"></div>
+                    </div>
+                </div>
+                <script>
+                    //don't show cloud button
+                    var config = {
+                        modeBarButtonsToRemove: ['sendDataToCloud'],
+                        displaylogo: false
+                    };
+
+                    //pie graph
+                    var pie_data = [{
+                        values: [3, 97],
+                        labels: ['Offline', 'Online'],
+                        type: 'pie'
+                    }];
+                    var layout_versions = {
+                        width: 500
+                    };
+                    Plotly.newPlot('pie_chart', pie_data, layout_versions, config);
+
+                    //bar_plot with 4 diffrent graphs
+                    var six_hours = ['1h', '2h', '3h', '4h', '5h', '6h'];
+                    var one_month = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+                    var six_months = [1, 2, 3, 4, 5, 6];
+                    var one_year = ['Jan', 'Feb', 'March', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+
+                    var sixhours = {
+                        x: six_hours,
+                        y: [10, 15, 13, 17, 20, 25],
+                        type: 'bar',
+                        visible: true
+                    };
+
+                    var month = {
+                        x: one_month,
+                        y: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                        type: 'bar',
+                        visible: false
+                    };
+
+                    var sixmonths = {
+                        x: six_months,
+                        y: [10, 15, 13, 17, 20, 25],
+                        type: 'bar',
+                        visible: false
+                    };
+
+                    var oneyear = {
+                        x: one_year,
+                        y: [10, 15, 13, 17, 20, 25, 10, 15, 13, 17, 20, 25],
+                        type: 'bar',
+                        visible: false
+                    };
+
+                    var data = [sixhours, month, sixmonths, oneyear];
+
+                    Plotly.plot('bar_plot', data, {
+                        xaxis: {
+                            title: 'time'
+                        },
+                        yaxis: {
+                            title: 'count'
+                        },
+                        updatemenus: [{
+                            y: 1,
+                            yanchor: 'top',
+                            buttons: [{
+                                method: 'restyle',
+                                args: ['visible', [true, false, false, false]],
+                                label: 'Last 6 hours'
+                            }, {
+                                method: 'restyle',
+                                args: ['visible', [false, true, false, false]],
+                                label: 'Last month'
+                            }, {
+                                method: 'restyle',
+                                args: ['visible', [false, false, true, false]],
+                                label: 'Last 6 months'
+                            }, {
+                                method: 'restyle',
+                                args: ['visible', [false, false, false, true]],
+                                label: 'Last year'
+                            }]
+                        }]
+                    }, config);
+
+
+                    //line graph
+                    var line1 = {
+                        x: six_hours,
+                        y: [10, 15, 13, 17, 20, 22],
+                        name: 'Events',
+                        visible: true
+                    };
+                    var line2 = {
+                        x: six_hours,
+                        y: [15, 13, 17, 20, 25, 25],
+                        name: 'Recommendations',
+                        visible: true
+                    };
+                    var line3 = {
+                        x: six_hours,
+                        y: [1,2,3,4,5,6],
+                        name: 'Clients ',
+                        visible: true
+                    };
+                    var graph_data = [line1, line2, line3];
+                    Plotly.plot('line_plot', graph_data, {
+                        xaxis: {
+                            title: 'time'
+                        },
+                        yaxis: {
+                            title: 'count'
+                        }
+                    }, config);
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
