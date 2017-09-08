@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- jQuery CDN import -->
+    <!-- CDN imports for Bootstrap, jQuery and Font Awesome Icons -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="style.css">
     <script>
         $(function(){ $("head").load("head.html") });
     </script>
@@ -13,26 +17,220 @@
 <div class="container-fluid">
     <br/><br/><br/>
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="col-md-12">
-                        <p>Click on links to direct you to my works!</p>
-                        <ul>
-                            <li><a href="http://www.mio-shop.eu/">Mio-shop e-shop</a></li>
-                            <li><a href="http://elekter24.ee/">Elekter24 web-page</a></li>
-                            <li><a href="game">Game for Loomehäkk.</a></li>
-                            <li><a href="workdemos/DemoPlotly.html">Plotly Demo with Python</a></li>
-                            <li><a href="workdemos/plotly.html">Plotly Demo with Javascript</a></li>
-                            <li><a href="css3">Effects with CSS3!</a></li>
-                            <li><a href="workdemos/DemoMatPlotLib.html">MatPlotLib Demos</a></li>
-                            <li><a href="linnad">Web page for school subject. </a></li>
-                            <li><a href="workdemos/bootstraptables.html">Bootstrap tables</a></li>
-                            <li><a href="https://github.com/varje/Javascript__exercises">Javascript exercises</a></li>
-                            <li><a href="https://github.com/varje/Mendel">Python script for programming class</a></li>
-                            <li><a href="http://138.68.68.130/~varje.kass/HTML/index.html">My first web-page</a></li>
-                        </ul>
-
+                        <h4>Click on links to see my works!</h4>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="face front">
+                                            <h3><a target="_blank" href="https://stacc.samples.ws/movieone/">MovieOne</a></h3>
+                                        </div>
+                                        <div class="face back">
+                                            <h3><a target="_blank" href="https://stacc.samples.ws/movieone/">MovieOne</a></h3>
+                                            <p>Demo page for STACC recommendations system.</p>
+                                            <p>Done during my internship in STACC.
+                                            <p>Done with jQuery. </p>
+                                            <a target="_blank" href="https://stacc.samples.ws/movieone/ class="btn btn-default">See work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="face front">
+                                            <h3><a target="_blank" href="http://www.mio-shop.eu/">Mio-shop</a></h3>
+                                        </div>
+                                        <div class="face back">
+                                            <h3><a target="_blank" href="http://www.mio-shop.eu/">Mio-shop</a></h3>
+                                            <p>An e-shop for a real client.</p>
+                                            <p>Done as a school work with a team.</p>
+                                            <p> Done with Woocommerce. </p>
+                                            <a target="_blank" href="http://www.mio-shop.eu/ class="btn btn-default">See work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="face front">
+                                            <h3><a href="http://elekter24.ee/">Elekter24</a></h3>
+                                        </div>
+                                        <div class="face back">
+                                            <h3><a target="_blank" href="http://elekter24.ee/">Elekter24</a></h3>
+                                            <p>A web-site for my friend company.</p>
+                                            <p>Done in Wordpress.</p>
+                                            <br>
+                                            <a target="_blank" href="http://elekter24.ee/" class="btn btn-default">See work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="face front">
+                                            <h3><a target="_blank" href="game">TartuFic game</a></h3>
+                                        </div>
+                                        <div class="face back">
+                                            <h3><a target="_blank" href="game">TartuFic game</a></h3>
+                                            <p>Game for application TartuFic.</p>
+                                            <p>Done during Loomehäkk. </p>
+                                            <p>Done with jQuery. </p>
+                                            <a target="_blank" href="game" class="btn btn-default">See work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="face front">
+                                            <h3><a target="_blank" href="workdemos/DemoPlotly.html">Plotly Python</a></h3>
+                                        </div>
+                                        <div class="face back">
+                                            <h3><a target="_blank" href="workdemos/DemoPlotly.html">Plotly Python</a></h3>
+                                            <p>For my work in STACC I often use Plotly.</p>
+                                            <p>Done only for demo purposes.</p>
+                                            <p>Done in Jupyter Notebook and when downloaded as HTML.</p>
+                                            <a target="_blank" href="workdemos/DemoPlotly.html" class="btn btn-default">See work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="face front">
+                                            <h3><a href="workdemos/plotly.html">Plotly Javascript</a></h3>
+                                        </div>
+                                        <div class="face back">
+                                            <h3><a target="_blank" href="workdemos/plotly.html">Plotly Javascript</a></h3>
+                                            <p>For web-pages I use Plotly Javascript.</p>
+                                            <p>Done only for demo purposes.</p>
+                                            <br>
+                                            <a target="_blank" href="workdemos/plotly.html" class="btn btn-default">See work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="face front">
+                                            <h3><a target="_blank" href="css3">Effects with CSS3!</a></h3>
+                                        </div>
+                                        <div class="face back">
+                                            <h3><a target="_blank" href="css3">Effects with CSS3!</a></h3>
+                                            <p>Trying out diffrent effects with CCS3.</p>
+                                            <p>Done during my studies. </p>
+                                            <p>Done with HTML and CSS. </p>
+                                            <a target="_blank" href="css3" class="btn btn-default">See work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="face front">
+                                            <h3><a target="_blank" href="workdemos/DemoMatPlotLib.html">MatPlotLib</a></h3>
+                                        </div>
+                                        <div class="face back">
+                                            <h3><a target="_blank" href="workdemos/DemoMatPlotLib.html">MatPlotLib</a></h3>
+                                            <p>For my work in STACC I also use MatPlotLib.</p>
+                                            <p>Done only for demo purposes.</p>
+                                            <br>
+                                            <a target="_blank" href="workdemos/DemoMatPlotLib.html" class="btn btn-default">See work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="face front">
+                                            <h3><a href="workdemos/bootstraptables.html">Bootstrap tables</a></h3>
+                                        </div>
+                                        <div class="face back">
+                                            <h3><a target="_blank" href="workdemos/bootstraptables.html">Bootstrap tables</a></h3>
+                                            <p>For interactive tabels I like to use Bootstrap Datatables.</p>
+                                            <p>Done only for demo purposes.</p>
+                                            <br>
+                                            <a target="_blank" href="workdemos/bootstraptables.html" class="btn btn-default">See work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="face front">
+                                            <h3><a target="_blank" href="https://github.com/varje/Javascript__exercises">Javascript exercises</a></h3>
+                                        </div>
+                                        <div class="face back">
+                                            <h3><a target="_blank" href="https://github.com/varje/Javascript__exercises">Javascript exercises</a></h3>
+                                            <p>Diffrent small exercises with Javascript.</p>
+                                            <p>Done for school subject. </p>
+                                            <br>
+                                            <a target="_blank" href="https://github.com/varje/Javascript__exercises" class="btn btn-default">See work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="face front">
+                                            <h3><a target="_blank" href="https://github.com/varje/Mendel">Mendel Laws</a></h3>
+                                        </div>
+                                        <div class="face back">
+                                            <h3><a target="_blank" href="https://github.com/varje/Mendel">Mendel Laws</a></h3>
+                                            <p>A Python application for playing with Mendel laws.</p>
+                                            <p>Done as pair-work for university course.</p>
+                                            <br>
+                                            <a target="_blank" href="https://github.com/varje/Mendel" class="btn btn-default">See work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="flip">
+                                    <div class="card">
+                                        <div class="face front">
+                                            <h3><a href="http://138.68.68.130/~varje.kass/HTML/index.html">My first web-page</a></h3>
+                                        </div>
+                                        <div class="face back">
+                                            <h3><a target="_blank" href="http://138.68.68.130/~varje.kass/HTML/index.html">My first web-page</a></h3>
+                                            <p>Web page about programming languages with a quiz.</p>
+                                            <p>Done during my studies.</p>
+                                            <br>
+                                            <a target="_blank" href="http://138.68.68.130/~varje.kass/HTML/index.html" class="btn btn-default">See work</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
                     </div>
                 </div>
             </div>
