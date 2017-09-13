@@ -1,0 +1,106 @@
+.header {
+    position: relative;
+    background-image:url(header.jpg);
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    margin-bottom: 0;
+}
+
+.header_text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.container-fluid {
+    background-image: url(../bg.jpg);
+    background-repeat: repeat;
+}
+
+html, body, .container-fluid {
+    height: 100%;
+    list-style-position:inside;
+}
+
+.img_circle {
+    height: 30%;
+    width: 30%;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+i {
+    padding-right: 5px;
+    color: white;
+}
+
+h4 {
+    text-align: center;
+}
+
+/* flip cards css */
+.flip {
+    -webkit-perspective: 800;
+    perspective: 800;
+    position: relative;
+    text-align: center;
+
+}
+.flip .card.flipped{
+    -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+}
+.flip .card {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    background:
+            radial-gradient(
+                    circle,
+                    #c4e3f3,
+                    #60C6C8
+            );
+    border-radius: 30%;
+
+}
+.flip .card .face {
+    -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden ;
+    z-index: 2;
+}
+
+.flip .card .front {
+    position: absolute;
+    z-index: 1;
+
+}
+
+.front {
+   padding-left: 30%;
+}
+
+.front h3 {
+    padding-bottom: 50%;
+}
+
+.flip .card .back {
+    -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+}
+
+.face ol li {
+    font-size: 20px;
+}
+
+footer {
+    background-color: #efefef;
+    text-align: center;
+    width: 100%;
+}

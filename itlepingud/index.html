@@ -10,12 +10,7 @@
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="../style.css">
-    <script src="../js.js" type="text/javascript"></script>
-    <script>
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
-    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="header"></div>
@@ -30,14 +25,54 @@
                             <div class="flip">
                                 <div class="card">
                                     <div class="face front">
-                                        <h3>IT lepingud - mis need on?</h3>
+                                        <h1>IT lepingud - mis need on?</h1>
                                     </div>
                                     <div class="face back">
-                                        <h3>IT lepingud - mis need on?</h3>
-                                        <p>Leping on tehing kahe või enama isiku (lepingupooled) vahel,
-                                            millega lepingupool kohustub või lepingupooled kohustuvad midagi tegema või tegemata jätma.</p>
-                                        <p>IT - infotehnoloogia valdkond </p>
-                                        <p>IT lepingud - infotehnoloogiaga seotud lepinud</p>
+                                        <h1>IT lepingud - mis need on?</h1>
+                                        <h3>Leping on tehing kahe või enama isiku (lepingupooled) vahel,
+                                            millega lepingupool kohustub või lepingupooled kohustuvad midagi tegema või tegemata jätma.
+                                            Lepingu võib sõlmida suuliselt, kirjalikult või mis tahes muus vormis,
+                                            kui seaduses ei ole sätestatud lepingu kohustuslikku vormi.</h3>
+                                        <h3>Infotehnoloogia ehk IT (inglise Information Technology) käsitleb elektrooniliste arvutite
+                                            ja tarkvara kasutamist, et luua, koguda, salvestada, säilitada, kaitsta, otsida, töödelda, korrastada, edastada ja tarbida digitaalset informatsiooni.</h3>
+                                        <h3>IT lepingud - infotehnoloogiaga seotud lepingud</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="row">
+                            <div class="flip">
+                                <div class="card">
+                                    <div class="face front">
+                                        <h1>IT-le relevantsete lepingute tüübid</h1>
+                                    </div>
+                                    <div class="face back">
+                                        <h1>IT-le relevantsete lepingute tüübid</h1>
+                                        <h2>Võõrandamislepingud - konkreetne asi antakse üle teisele lepingupoolele</h2>
+                                        <ol>
+                                            <li>Müügileping</li>
+                                            <li>Vahetusleping</li>
+                                            <li>Kinkeleping</li>
+                                        </ol>
+                                        <h2>Kasutuslepingud - antakse kasutusõigus teisele osapoolele</h2>
+                                        <ol>
+                                            <li>Litsentsileping - kasutaja tasub litsentsitasu ja võib vara kasutada</li>
+                                            <ol>
+                                                <li>Lihtlitsentsileping - loojale jääb kasutamisõigus</li>
+                                                <li>Ainulitsentsileping</li>
+                                            </ol>
+                                            <li>Frantsiisileping - antakse Õigus frantsiisiandja kaubamärgile, ärilisele tähtsusele ja oskusteabele</li>
+                                            <li>Tasuta kasutamise leping</li>
+                                            <li>Kompromissileping - ebaselge õigussuhte tingimuste muutmisel rakendatav</li>
+                                        </ol>
+                                        <h2>Teenuste osutamise lepingud</h2>
+                                        <ol>
+                                            <li>Käsundusleping - teenuste osutamine</li>
+                                            <li>Töövõtuleping - tuleb saavutada tulemus (muuta või luua asi)</li>
+                                            <li>Tööleping - töötaja allub tööandja juhtimisele ja kontrollile</li>
+                                        </ol>
                                     </div>
                                 </div>
                             </div>
@@ -47,8 +82,14 @@
             </div>
         </div>
     </div>
+    <div id="footer"></div>
 </div>
-<div id="footer"></div>
-
+<script>
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+    $('.flip').hover(function(){
+        $(this).find('.card').toggleClass('flipped');
+    });
+</script>
 </body>
 </html>
