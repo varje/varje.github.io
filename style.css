@@ -58,7 +58,12 @@ h4 {
     -webkit-transition: 0.5s;
     transform-style: preserve-3d;
     transition: 0.5s;
-    background-color: #e8e8e8;
+    background:
+            radial-gradient(
+                    circle,
+                    #c4e3f3,
+                    #60C6C8
+            );
     border-radius: 30%;
 
 }
