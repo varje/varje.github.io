@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    background-image:url(header.jpg);
+    background-image:url(img/header.jpg);
     background-repeat: repeat;
     background-size: 100% 100%;
     margin-bottom: 0;
@@ -37,7 +37,7 @@ i {
     color: white;
 }
 
-h4 {
+h4, h2 {
     text-align: center;
 }
 
@@ -87,7 +87,8 @@ h4 {
 }
 
 .front h3 {
-    padding-bottom: 50%;
+    padding: 30%;
+    padding-top: 40%;
 }
 
 .flip .card .back {
