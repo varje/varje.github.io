@@ -1,6 +1,8 @@
+
+/* header and body css for all pages */
 .header {
     position: relative;
-    background-image:url(header.gif);
+    background-image:url(img/header.gif);
     background-repeat: repeat;
     background-size: auto 100%;
     margin-bottom: 0;
@@ -14,7 +16,7 @@
 }
 
 .container-fluid {
-    background-image: url(bg.jpg);
+    background-image: url(img/bg.jpg);
     background-repeat: repeat;
 }
 
@@ -36,6 +38,12 @@ i {
 
 h4 {
     text-align: center;
+}
+
+.about i {
+    color: darkblue;
+    padding-right: 5px;
+    font-size: 20px;
 }
 
 /* flip cards css */
@@ -88,6 +96,7 @@ h4 {
     transform: rotatey(-180deg);
 }
 
+/* footer for all pages */
 footer {
     background-color: #efefef;
     text-align: center;
