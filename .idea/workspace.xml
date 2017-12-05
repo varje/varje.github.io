@@ -2,60 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e0fd3bb-eaf5-43db-8dd8-d79357790115" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/linnad/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/linnad/parnu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/linnad/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/linnad/tallinn.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/linnad/tallinn.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/linnad/tartu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_config.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_includes/analytics.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_includes/disqus.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_includes/meta.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_includes/svg-icons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_layouts/default.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_layouts/page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_layouts/post.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_posts/2017-9-22-Hello-World.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_sass/_highlights.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_sass/_reset.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_sass/_svg-icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/_sass/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/style.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/.idea/Veebirakendused.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/.idea/dataSources.local.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/.idea/dataSources/378b3747-3467-453d-aae4-a19bcdde0b76.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/.idea/dataSources/378b3747-3467-453d-aae4-a19bcdde0b76/storage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/.idea/sqldialects.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/admin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/footer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/header.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/img/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/img/header.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/img/logo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/img/munad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/img/nuikapsas.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/img/roos.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/info.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/kontakt.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/login.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/logout.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/ostukorv.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/outsource/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/pood.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/registreeru.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webshop/style.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.html" afterPath="$PROJECT_DIR$/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/works.html" afterPath="$PROJECT_DIR$/works.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,11 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="6" />
+            <state relative-caret-position="50">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -113,8 +60,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="275">
+              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -127,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
@@ -189,7 +136,6 @@
         <option value="$PROJECT_DIR$/js.js" />
         <option value="$PROJECT_DIR$/head.html" />
         <option value="$PROJECT_DIR$/about.html" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/blog/_layouts/default.html" />
         <option value="$PROJECT_DIR$/blog/_layouts/page.html" />
@@ -214,6 +160,7 @@
         <option value="$PROJECT_DIR$/linnad/tartu.html" />
         <option value="$PROJECT_DIR$/works.html" />
         <option value="$PROJECT_DIR$/header.html" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -385,12 +332,12 @@
       <workItem from="1505989562403" duration="9774000" />
       <workItem from="1506082404845" duration="4161000" />
       <workItem from="1512492287629" duration="1356000" />
-      <workItem from="1512493958630" duration="3181000" />
+      <workItem from="1512493958630" duration="3760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71463000" />
+    <option name="totallyTimeSpent" value="72042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
@@ -582,26 +529,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -615,6 +546,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="102" lean-forward="false" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
