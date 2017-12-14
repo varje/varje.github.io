@@ -6,8 +6,3 @@
 $('.flip').hover(function(){
     $(this).find('.card').toggleClass('flipped');
 });
-
-// description text as pop-up
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();
-});
