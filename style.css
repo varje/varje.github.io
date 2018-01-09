@@ -18,6 +18,7 @@
 .container-fluid {
     background-image: url(img/bg.jpg);
     background-repeat: repeat;
+    background-size: 100% auto;
 }
 
 html, body, .container-fluid {
@@ -47,7 +48,7 @@ h4 {
 }
 
 /* flip cards css */
-.flip {
+/*.flip {
     -webkit-perspective: 800;
     perspective: 800;
     position: relative;
@@ -94,7 +95,85 @@ h4 {
 .flip .card .back {
     -webkit-transform: rotatey(-180deg);
     transform: rotatey(-180deg);
+}*/
+
+.flip {
+   -webkit-perspective: 800;
+   perspective: 800;
+   width: 400px;
+   height: 200px;
+   position: relative;
+   margin: 50px auto;
 }
+
+.flipped {
+  transform:rotatey(-180deg);
+  -webkit-transform:rotatey(-180deg);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;/* W3C */
+}
+
+
+.front {
+  position: absolute;
+  z-index: 1;
+  background:
+            radial-gradient(
+                    circle,
+                    #c4e3f3,
+                    #60C6C8
+            );
+  background:
+            -webkit-radial-gradient(
+                    circle,
+                    #c4e3f3,
+                    #60C6C8
+            );
+  border-radius: 30%;
+}
+
+.back {
+    color: black;
+    background:
+            radial-gradient(
+                    circle,
+                    #c4e3f3,
+                    #60C6C8
+            );
+  background:
+            -webkit-radial-gradient(
+                    circle,
+                    #c4e3f3,
+                    #60C6C8
+            );
+  border-radius: 30%;
+  transform:rotatey(-180deg);
+  -webkit-transform: rotatey(-180deg);
+}
+
+/* center flip card front heading */
+.front h3 {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
 
 /* footer for all pages */
 footer {
