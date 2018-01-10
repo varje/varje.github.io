@@ -100,7 +100,7 @@ h4 {
 .flip {
    -webkit-perspective: 800;
    perspective: 800;
-   width: 400px;
+   width: 90%;
    height: 200px;
    position: relative;
    margin: 50px auto;
