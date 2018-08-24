@@ -130,7 +130,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   color: #fed136;
-  font-family: Brush Script MT, Brush Script Std, Helvetica, Arial, cursive;
+  font-family: 'Alex Brush', Brush Script MT, Brush Script Std, Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -196,6 +196,7 @@ header.masthead {
 header.masthead .intro-text {
   padding-top: 150px;
   padding-bottom: 100px;
+  font-family: 'Alex Brush', Helvetica, Arial, sans-serif;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -211,7 +212,7 @@ header.masthead .intro-text .intro-heading {
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Alex Brush', Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -219,6 +220,7 @@ header.masthead .intro-text .intro-heading {
     padding-top: 300px;
     padding-bottom: 200px;
   }
+
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
     font-style: italic;
@@ -231,7 +233,7 @@ header.masthead .intro-text .intro-heading {
     font-weight: 700;
     line-height: 75px;
     margin-bottom: 50px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Alex Brush', Helvetica, Arial, sans-serif;
   }
 }
 
@@ -240,20 +242,71 @@ header.masthead .intro-text .intro-heading {
   text-transform: none;
 }
 
-#portfolio {
-  padding: 50px;
-  background: #ccc;
-  background: radial-gradient(#fff, #ddd, #ccc);
-  text-align: center !important;
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
-.carousel-inner {
-    width: 100%;
-    height: 100%;
+.portfolio-box .portfolio-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: #fed136;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.carousel-custom {
-  padding: 100px;
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+.portfolio-box:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
+  }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
+}
+
+.service-box {
+  max-width: 400px;
 }
 
 .timeline {
@@ -544,4 +597,8 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
+}
+
+.brush-font {
+    font-family: 'Alex Brush', Helvetica, Arial, sans-serif;
 }
