@@ -243,7 +243,10 @@ header.masthead .intro-text .intro-heading {
 }
 
 .popup-gallery {
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: 2;
 }
 
 .portfolio-box {
@@ -252,13 +255,11 @@ header.masthead .intro-text .intro-heading {
   max-width: 650px;
   margin: 0 auto;
   border: 2px solid #ddd;
-  z-index: 1;
-  background-color: #000;
-  opacity: 0.7;
 }
 
 .portfolio-box img {
-  z-index: 2;
+  background-color: #000;
+  opacity: 0.7;
 }
 
 .portfolio-box .portfolio-box-caption {
