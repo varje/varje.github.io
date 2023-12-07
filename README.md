@@ -4,7 +4,7 @@
 
 ## Varje Kivila | Homepage
 
-### This is my home page folder.
+### This is my homepage folder.
 
 ##### You can access files as files with https://varje.github.io/file-name.html 
 
