@@ -10,7 +10,7 @@
 
 ##### Special thanks to:
 1) Carlos Bentes
-2) Virve Kass
+2) Virve Räni
 3) Canvas Free CV Templates
 4) Bootstrap Free Templates
 5) Github Free Web Hosting
